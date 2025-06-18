@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="external.css">
+    <link rel="icon" href="./regi.jpg">
+</head>
+
+<body>
+    <div class="form-container">
+        <h2> Student Registration Form</h2>
+        <form action="">
+            <!-- First Name -->
+            <div class="form-group">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" placeholder="Enter Your First Name" minlength="3" maxlength="6" required>
+            </div>
+
+            <!-- Last Name -->
+            <div class="form-group">
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" placeholder="Enter Your Last Name" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="it should contain @.." required>
+            </div>
+
+            <!-- Mobile -->
+            <div class="form-group">
+                <label for="mobilenumber">Mobile:</label>
+                <input type="text" id="mobilenumber" placeholder="Only 10 digits are allowed" required>
+            </div>
+
+            <!-- Gender -->
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="Male" required> Male
+                <input type="radio" name="gender" value="Female"> Female
+            </div>
+
+
+            <!-- DOB -->
+            <div class="form-group">
+                <label for="dob">Date Of Birth:</label>
+                <input type="date" id="dob" required>
+            </div>
+
+            <!-- Address -->
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" rows="3" cols="30" placeholder="Enter your address" required></textarea>
+            </div>
+
+            <!-- City -->
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" required>
+            </div>
+
+            <!-- Area PIN -->
+            <div class="form-group">
+                <label for="areapin">Area PIN:</label>
+                <input type="text" id="areapin" placeholder="6 digit PIN" required>
+            </div>
+
+            <!-- State -->
+            <div class="form-group">
+                <label for="state">State:</label>
+                <input type="text" id="state" required>
+            </div>
+
+            <!-- Qualification -->
+            <div class="form-group">
+                <label for="qualification">Qualification:</label>
+                <select id="qualification">
+                    <option value="" selected disabled>Select Qualification</option>
+                    <option value="Msc(CA&IT)">Msc(CA&IT)</option>
+                    <option value="BCA">BCA</option>
+                    <option value="BCOM">BCOM</option>
+                    <option value="BSC">BSC</option>
+                </select>
+            </div>
+
+            <!-- Specialization -->
+            <div class="form-group">
+                <label>Specialization:</label>
+                <input type="checkbox" value="Computer Science" required> Computer Science<br>
+                <input type="checkbox" value="Information Technology"> Information Technology<br>
+                <input type="checkbox" value="Computer Architecture"> Computer Architecture<br>
+                <input type="checkbox" value="Tele Communication"> Tele Communication<br>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
